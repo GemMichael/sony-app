@@ -16,17 +16,11 @@ const tvs = [
     image: "/images/bravia banner.webp",
   },
   {
-    id: "bravia-xr-x95k",
-    name: "Sony Bravia XR X95K",
-    description: "4K Mini LED with XR Contrast Booster.",
-    image: "/images/bravia banner.webp",
-  },
-  {
-    id: "bravia-xr-x95ke",
-    name: "Sony Bravia XR X95K",
-    description: "4K Mini LED with XR Contrast Booster.",
-    image: "/images/bravia banner.webp",
-  },
+    id: "bravia-xr-x90l",
+    name: "Sony Bravia XR X90L",
+    description: "4K Full Array LED with XR Contrast Booster.",
+    image: "/images/soundbar banner.webp"
+  }
 ];
 
 export default function AllTVsPage() {

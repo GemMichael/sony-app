@@ -1,10 +1,12 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import React from 'react'
+import React from "react";
+import { FiMenu, FiX } from "react-icons/fi"; 
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     useEffect(() => {
         const handleScroll = () => {
@@ -12,36 +14,40 @@ export default function Navbar() {
         };
 
         window.addEventListener("scroll", handleScroll);
-
-        
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
-        <div>
-            <nav className={`fixed top-0 z-50 w-full  px-[24px] xl:px-0 ${isScrolled ? "bg-black/90  shadow-md" : "bg-black"}`}>
-                <div className="flex flex-wrap items-center justify-between max-w-[1160px] w-full py-5 mx-auto">
-                    <div className="lg:text-[28px] text-2xl  text-white">SONY</div>
-                    <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
-                    </div>
-                    <div className="items-center justify-between w-full gap-16 md:flex lg:w-auto lg:order-1 transition-all duration-300 ease-in-out">
-                        <ul className="flex flex-col items-center w-[90%] justify-center gap-4 md:gap-[30px] p-4 mt-4 font-medium absolute md:left-1/2 md:-translate-x-1/2  z-20 bg-[#141414]/[20%]  border backdrop-blur-2xl md:backdrop-blur-0 border-[#222222] md:bg-transparent rounded-lg md:p-0 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                            <li className="text-center">
-                                <a href="/" className="block text-center text-white rounded md:bg-transparent" >Home</a>
-                            </li>
-                            <li className="text-center">
-                                <Link href="/products" className="block text-center text-white rounded md:bg-transparent"  >Products</Link>
-                            </li>
-                            <li className="text-center">
-                                <Link href="/contact" className="block text-center text-white rounded md:bg-transparent"  >Contact</Link>
-                            </li>
-                            <li className="text-center">
-                                <Link href="/about" className="block text-center text-white rounded md:bg-transparent"  >About</Link>
-                            </li>
-                        </ul>
-                    </div>
+        <nav className={`fixed top-0 z-50 w-full px-6 xl:px-0 transition-all duration-300 ${isScrolled ? "bg-black/90 shadow-md" : "bg-black"}`}>
+            <div className="flex items-center justify-between max-w-[1160px] w-full py-5 mx-auto">
+
+                <div className="lg:text-[28px] text-2xl text-white">SONY</div>
+
+
+                <button 
+                    className="md:hidden text-white text-2xl focus:outline-none"
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    {isMenuOpen ? <FiX /> : <FiMenu />}
+                </button>
+
+                <div className={`absolute md:relative top-16 left-0 w-full md:w-auto md:top-0 bg-black md:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? "block" : "hidden"} md:flex md:items-center md:justify-between md:gap-6`}>
+                    <ul className="flex flex-col md:flex-row items-center w-full md:w-auto gap-4 md:gap-8 p-6 md:p-0 font-medium md:static absolute left-1/2 transform -translate-x-1/2 bg-[#141414]/80 md:bg-transparent border md:border-0 backdrop-blur-2xl md:backdrop-blur-0 border-[#222222] md:rounded-none rounded-lg">
+                        <li className="text-center">
+                            <Link href="/" className="block text-white hover:text-gray-300 transition">Home</Link>
+                        </li>
+                        <li className="text-center">
+                            <Link href="/products" className="block text-white hover:text-gray-300 transition">Products</Link>
+                        </li>
+                        <li className="text-center">
+                            <Link href="/contact" className="block text-white hover:text-gray-300 transition">Contact</Link>
+                        </li>
+                        <li className="text-center">
+                            <Link href="/about" className="block text-white hover:text-gray-300 transition">About</Link>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }

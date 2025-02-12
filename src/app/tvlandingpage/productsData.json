@@ -1,0 +1,113 @@
+{
+    "sections": [
+    {
+      "title": "Cinematic expertise",
+      "text": "Sony is involved in every aspect of filmmaking from movie shoots and post-production editing to studio broadcasts and cinema screenings. Our specialist knowledge allows us to replicate the cinema experience in your home.",
+      "video": "/videos/Sony_cinema.mp4"
+    },
+    {
+      "title": "Cinematic pictures",
+      "text": "With a deep understanding of film production, we have the expertise to bring movies home and fill your space with cinematic excitement.",
+      "video": "/videos/Bravia_picture.mp4"
+    },
+    {
+      "title": "Cinematic sound",
+      "text": "BRAVIA with advanced picture technologies delivers brightness that conventional TVs can't match for vivid and authentic entertainment.",
+      "video": "/videos/Sony_sound.mp4"
+    },
+    {
+      "title": "Creator's vision",
+      "text": "Pair with BRAVIA Theatre for true home cinema. 360 Spatial Sound Mapping creates multiple phantom speakers, immersing you in movies.",
+      "video": "/videos/Sony_creators.mp4"
+    },
+    {
+      "title": "SONY PICTURES CORE",
+      "text": "BRAVIA is equipped with Studio Calibrated mode to reproduce the picture and sound quality as intended by the creators.",
+      "video": "/videos/Bravia_picture.mp4"
+    },
+    {
+      "title": "Cinematic film experience",
+      "text": "SONY PICTURES CORE makes it easy to enjoy the latest movie releases and film classics.",
+      "video": "/videos/Sony_cinema.mp4"
+    }
+  ],
+    
+    "screenTypes": [
+        {
+            "title": "Mini LED and Full Array LED",
+            "description": "Experience true-to-life contrast with incredible brightness and dazzling light.",
+            "image": "/images/Bravia_Led.webp"
+        },
+        {
+            "title": "OLED",
+            "description": "Enjoy pure blacks, vibrant colours and immersive sound to match the picture.",
+            "image": "/images/Bravia_Oled.png"
+        },
+        {
+            "title": "Big screen TVs",
+            "description": "Get closer to your favourite entertainment with breathtaking depth and detail.",
+            "image": "/images/Bravia_bigscreen.png"
+        }
+    ],
+    
+    "products": [
+        {
+            "name": "BRAVIA 9",
+            "image": "/images/Bravia_9.webp",
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        },
+        {
+            "name": "BRAVIA 8",
+            "image": "/images/Bravia_8.webp",
+            "description": "XR Processor | OLED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        },
+        {
+            "name": "BRAVIA 7",
+            "image": "/images/Bravia_7.webp",
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        }
+    ],
+    "otherproducts": [
+        {
+            "id": 1,
+            "name": "BRAVIA Theatre Quad",
+            "image": "/images/Soundbar_1.webp",
+            "description": "BRAVIA Theatre Quad | Flagship Home Theatre System | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
+            "link": "/products"
+        },
+        {
+            "id": 2,
+            "name": "BRAVIA Theatre Bar 9",
+            "image": "/images/Soundbar_9.webp",
+            "description": "Flagship Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
+            "link": "/products"
+        },
+        {
+            "id": 3,
+            "name": "BRAVIA Theatre Bar 8",
+            "image": "/images/Sounbar_8.webp",
+            "description": "Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
+            "link": "/products"
+        }
+    ],
+    "interests": [
+        {
+            "image": "/images/Bravia_gaming.png",
+            "title": "Gaming",
+            "description": "High-impact gaming BRAVIA TVs are designed to provide optimal performance with PlayStation 5® consoles.",
+            "link": "/products"
+        },
+        {
+            "image": "/images/Bravia_google.png",
+            "title": "Google TV™",
+            "description": "No more jumping from app to app. Google TV brings together your movies and shows from across your subscription, so they're in one place.",
+            "link": "/products"
+        },
+        {
+            "image": "/images/Bravia_XR.png",
+            "title": "Processor",
+            "description": "Our Processor XR makes the difference, reproducing pictures and sound as you see and hear them in the real world.",
+            "link": "/products"
+        }
+    ]
+}

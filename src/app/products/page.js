@@ -4,43 +4,44 @@ import Link from 'next/link';
 export default function Products() {
   return (
     <>
-      {/* Hero Section */}
+
       <section className="bg-black text-white min-h-screen flex items-center justify-center relative">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/90"></div>
         <div className="max-w-[1160px] w-full mx-auto px-6 text-center relative z-10">
-          <h1 className="text-6xl font-extrabold">Sony Bravia XR</h1>
+          <h1 className="text-6xl ">Sony Bravia 8 K-77XR80</h1>
           <p className="text-xl mt-4 max-w-lg mx-auto">
-            Experience lifelike visuals with 4K OLED brilliance.
+          Feel Every Pixel, Hear Every Moment.
           </p>
         </div>
       </section>
 
-      {/* Key Features */}
+
       <section className="bg-white text-black py-16 px-6">
-        <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           <div>
-            <img src="/icons/4k.svg" alt="4K OLED" className="w-16 mx-auto" />
-            <h2 className="text-xl font-bold mt-4">4K OLED</h2>
-            <p className="text-gray-600">Crisp, vibrant colors with deep blacks.</p>
+            <h2 className="text-xl font-bold mt-4">SLIM AND CHIC DESIGN</h2>
+            <p className="text-gray-600">Harmonic Presence | Slim One Slate</p>
           </div>
           <div>
-            <img src="/icons/ai.svg" alt="AI Processing" className="w-16 mx-auto" />
-            <h2 className="text-xl font-bold mt-4">Cognitive Processor XR</h2>
-            <p className="text-gray-600">AI-powered processing for real-world depth.</p>
+            <h2 className="text-xl font-bold mt-4">PURE BLACKS FOR REMARKABLE CONTRAST</h2>
+            <p className="text-gray-600">XR OLED Contrast Booster</p>
           </div>
           <div>
-            <img src="/icons/sound.svg" alt="Immersive Audio" className="w-16 mx-auto" />
-            <h2 className="text-xl font-bold mt-4">Immersive Audio</h2>
-            <p className="text-gray-600">Dolby Atmos & Acoustic Surface Audio.</p>
+            <h2 className="text-xl font-bold mt-4">SOUND FROM THE SCREEN</h2>
+            <p className="text-gray-600">Acoustic Surface Audio+™</p>
+          </div>
+          <div>
+            <h2 className="text-xl font-bold mt-4">LEVEL UP YOUR GAMING</h2>
+            <p className="text-gray-600">Perfect for PlayStation 5</p>
           </div>
         </div>
       </section>
 
-      {/* Detailed Description */}
+
       <section className="bg-gray-100 text-black py-20 px-6">
         <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <img src="/images/bravia-detail.webp" alt="Sony Bravia Detail" className="rounded-lg shadow-lg" />
+            <img src="/images/bravia/Bravia8_77inch.webp" alt="Sony Bravia Detail" className="rounded-lg shadow-lg" />
           </div>
           <div>
             <h2 className="text-4xl font-bold">Brilliant Colors. Breathtaking Clarity.</h2>
@@ -56,19 +57,19 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Image Gallery */}
+
       <section className="bg-white text-black py-16 px-6">
         <div className="max-w-[1160px] w-full mx-auto">
           <h2 className="text-3xl font-bold text-center">Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-            <img src="/images/bravia1.webp" alt="Bravia TV 1" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
-            <img src="/images/bravia2.webp" alt="Bravia TV 2" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
-            <img src="/images/bravia3.webp" alt="Bravia TV 3" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
+            <img src="/images/bravia banner.webp" alt="Bravia TV 1" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
+            <img src="/images/bravia banner.webp" alt="Bravia TV 2" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
+            <img src="/images/bravia banner.webp" alt="Bravia TV 3" className="rounded-lg shadow-lg hover:scale-105 transition-all duration-300" />
           </div>
         </div>
       </section>
 
-      {/* Comparison Table (Optional) */}
+
       <section className="bg-gray-800 text-white py-16 px-6">
         <div className="max-w-[1160px] w-full mx-auto">
           <h2 className="text-3xl font-bold text-center">Compare Models</h2>
@@ -101,7 +102,7 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Call to Action */}
+
       <section className="bg-black text-white py-20 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-4xl font-bold">Experience Sony Bravia XR</h2>

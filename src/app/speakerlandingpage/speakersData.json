@@ -1,0 +1,144 @@
+{
+    "sections": [
+    {
+      "title": "Experience cinematic 360 Spatial Sound",
+      "text": "Surrounded by multiple phantom speakers within a cinema-style surround sound field, it’s like you're there in the movie",
+      "video": "/videos/Sony_cinema.mp4"
+    },
+    {
+      "title": "True to the creator's vision",
+      "text": "With exceptional visuals and immersive sound, Sony ensures that the creators' vision is faithfully reproduced.",
+      "video": "/videos/Bravia_picture.mp4"
+    }
+  ],
+    
+    "productFinder": [
+        {
+            "title": "Soundbars",
+            "description": "Experience the immersive sound of our soundbars. Select from a wide range of soundbars. Immerse yourself completely in your favourite TV and movies.",
+            "image": "/images/Sounbar_8.webp"
+        },
+        {
+            "title": "Home Cinema Systems",
+            "description": "With our unique 360 Spatial Sound Mapping technology, Home Theatre System immerses you, your family and friends in a multi-dimensional expercience.",
+            "image": "/images/Soundbar_1.webp"
+        },
+        {
+            "title": "AV Receivers",
+            "description": "Powerful, flexible audio-video components that let you connect and stream from multiple sources.",
+            "image": "/images/avReciever.png"
+        },
+        {
+            "title": "Optional Speakers",
+            "description": "Take your home entertainment even further with optional wireless subwoofers and rear speakers.",
+            "image": "/images/optionalSpeaker.png"
+        },
+        {
+            "title": "Home Theatre Speakers",
+            "description": "Sony's audio expertise provides excellent home entertainment in this range of speakers.",
+            "image": "/images/homeTheatre.png"
+        },
+        {
+            "title": "All-in-One Systems",
+            "description": "Complete speaker offer power and impact for a cinematic expercience.",
+            "image": "/images/allinOne.png"
+        },
+        {
+            "title": "Neckband Speakers",
+            "description": "Wear your own personal speakers for movies, TV shows and music. Make a call with clear sound-perfect for online conferences.",
+            "image": "/images/neckBand.png"
+        }
+        ,
+        {
+            "title": "Portable Theatre System",
+            "description": "Surround yourself in sound with this powerful speaker system that creates an immersive experience anywhere you like.",
+            "image": "/images/portableSpeaker.png"
+        }
+    ],
+    
+    "products": [
+        {
+            "name": "BRAVIA 9",
+            "image": "/images/Bravia_9.webp",
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        },
+        {
+            "name": "BRAVIA 8",
+            "image": "/images/Bravia_8.webp",
+            "description": "XR Processor | OLED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        },
+        {
+            "name": "BRAVIA 7",
+            "image": "/images/Bravia_7.webp",
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+        }
+    ],
+    "otherproducts": [
+        {
+            "id": 1,
+            "name": "ULT TOWER 10",
+            "image": "/images/speaker/tower10.webp",
+            "description": "ULT POWER SOUND series | ULT TOWER 10 Party Speaker",
+            "link": "/products"
+        },
+        {
+            "id": 2,
+            "name": "ULT FIELD 7",
+            "image": "/images/speaker/field7.webp",
+            "description": "ULT POWER SOUND series | ULT FIELD 7 Wireless Portable Speaker",
+            "link": "/products"
+        },
+        {
+            "id": 3,
+            "name": "ULT FIELD 1",
+            "image": "/images/speaker/field1.webp",
+            "description": "ULT POWER SOUND series | ULT FIELD 1 Wireless Portable Speaker",
+            "link": "/products"
+        },
+        {
+            "id": 4,
+            "name": "SRS-XV500",
+            "image": "/images/speaker/xv500.png",
+            "description": "XV500 X-Series Wireless Party Speaker",
+            "link": "/products"
+        },
+        {
+            "id": 5,
+            "name": "SRS-XV800",
+            "image": "/images/speaker/xv800.png",
+            "description": "XV800 X-Series Wireless Party Speaker",
+            "link": "/products"
+        },
+        {
+            "id": 6,
+            "name": "SRS-XB100",
+            "image": "/images/speaker/xb100.png",
+            "description": "XB100 Portable Wireless Speaker",
+            "link": "/products"
+        }
+        ,
+        {
+            "id": 7,
+            "name": "SRS-XB43",
+            "image": "/images/speaker/tower10.webp",
+            "description": "XB43 EXTRA BASS™ Portable Wireless Speaker",
+            "link": "/products"
+        }
+        ,
+        {
+            "id": 8,
+            "name": "SRS-XB33",
+            "image": "/images/speaker/tower10.webp",
+            "description": "XB33 EXTRA BASS™ Portable Wireless Speaker",
+            "link": "/products"
+        }
+        ,
+        {
+            "id": 9,
+            "name": "SRS-XB23",
+            "image": "/images/speaker/tower10.webp",
+            "description": "XB23 EXTRA BASS™ Portable Wireless Speaker",
+            "link": "/products"
+        }
+    ]
+}
