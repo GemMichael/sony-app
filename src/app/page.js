@@ -26,17 +26,46 @@ export default function Home() {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
+
     const handleWheel = (e) => {
       if (e.deltaY !== 0) {
-        e.preventDefault(); 
-        carousel.scrollLeft += e.deltaY * 2; 
+        e.preventDefault();
+        carousel.scrollLeft += e.deltaY * 2;
       }
     };
 
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    const handleTouchStart = (e) => {
+      isDown = true;
+      startX = e.touches[0].pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    };
+
+    const handleTouchMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 2; 
+      carousel.scrollLeft = scrollLeft - walk;
+    };
+
+    const handleTouchEnd = () => {
+      isDown = false;
+    };
+
     carousel.addEventListener("wheel", handleWheel, { passive: false });
+    carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
+    carousel.addEventListener("touchmove", handleTouchMove, { passive: false });
+    carousel.addEventListener("touchend", handleTouchEnd);
 
     return () => {
       carousel.removeEventListener("wheel", handleWheel);
+      carousel.removeEventListener("touchstart", handleTouchStart);
+      carousel.removeEventListener("touchmove", handleTouchMove);
+      carousel.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
 
@@ -69,42 +98,41 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-white text-black min-h-screen flex flex-col items-center justify-center" data-aos="fade-up">
-        <div className="max-w-[1160px] w-full mx-auto px-6 text-center">
-          <motion.h1
-            className="text-4xl font-bold underline decoration-black tracking-wide mt-10"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            Explore Our Products
-          </motion.h1>
-          <p className="mt-4 text-center">Discover the latest innovations and technologies at Sony.</p>
-        </div>
+      <div className="max-w-[1160px] w-full mx-auto px-6 text-center">
+        <motion.h1
+          className="text-4xl font-bold underline decoration-black tracking-wide mt-10"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          Explore Our Products
+        </motion.h1>
+        <p className="mt-4 text-center">Discover the latest innovations and technologies at Sony.</p>
+      </div>
 
-
-        <div className="relative mt-10 w-full flex justify-center">
-          <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none" />
-          <div
-            ref={carouselRef}
-            className="w-full max-w-6xl overflow-x-hidden flex gap-6 py-10 px-4 scroll-smooth no-scrollbar"
-          >
-            {products.map((product) => (
-              <motion.div
-                key={product.id}
-                className="min-w-[350px] bg-white shadow-lg rounded-xl overflow-hidden"
-                whileHover={{ scale: 1.05 }}
-              >
-                <Link href={product.link} target="_blank">
-                  <img src={product.imgSrc} alt={product.alt} className="w-full h-60 object-cover" />
-                  <div className="p-4 text-center font-semibold">{product.title}</div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-          <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white via-transparent to-transparent z-10 pointer-events-none"></div>
+      <div className="relative mt-10 w-full flex justify-center">
+        <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none" />
+        <div
+          ref={carouselRef}
+          className="w-full max-w-6xl overflow-x-hidden flex gap-6 py-10 px-4 scroll-smooth no-scrollbar"
+        >
+          {products.map((product) => (
+            <motion.div
+              key={product.id}
+              className="min-w-[350px] bg-white shadow-lg rounded-xl overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+            >
+              <Link href={product.link} target="_blank">
+                <img src={product.imgSrc} alt={product.alt} className="w-full h-60 object-cover" />
+                <div className="p-4 text-center font-semibold">{product.title}</div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
-      </section>
+        <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white via-transparent to-transparent z-10 pointer-events-none"></div>
+      </div>
+    </section>
       <section className="bg-black text-white min-h-screen flex items-center justify-center px-6 xl:px-0" data-aos="fade-up">
         <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="md:pl-10 bg-gray/10 backdrop-blur-xl rounded-2xl p-10 shadow-[0px_4px_30px_rgba(255,255,255,0.1)] border border-white/10">
