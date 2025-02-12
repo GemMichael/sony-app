@@ -48,7 +48,7 @@ export default function Home() {
       if (!isDown) return;
       e.preventDefault();
       const x = e.touches[0].pageX - carousel.offsetLeft;
-      const walk = (x - startX) * 2; 
+      const walk = (x - startX) * 1; 
       carousel.scrollLeft = scrollLeft - walk;
     };
 
