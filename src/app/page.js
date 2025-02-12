@@ -30,7 +30,7 @@ export default function Home() {
     const handleWheel = (e) => {
       if (e.deltaY !== 0) {
         e.preventDefault();
-        carousel.scrollLeft += e.deltaY * 2;
+        carousel.scrollLeft += e.deltaY * 1.5;
       }
     };
 
