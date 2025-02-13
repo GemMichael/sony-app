@@ -8,13 +8,13 @@ import Link from "next/link";
 
 
 const products = [
-  { id: 1, title: "1000X SERIES", link: "https://www.sony.com", imgSrc: "/images/1000x.webp", alt: "Camera 1" },
-  { id: 2, title: "INZONE M10s", link: "https://www.samsung.com", imgSrc: "/images/M10s.webp", alt: "Camera 1" },
-  { id: 3, title: "BRAVIA 9", link: "https://www.lg.com", imgSrc: "/images/Bravia_9.webp", alt: "Camera 1" },
-  { id: 4, title: "Bravia Theatre Bar 9", link: "https://www.panasonic.com", imgSrc: "/images/Soundbar_9.webp", alt: "Camera 1" },
-  { id: 5, title: "BRAVIA 8", link: "https://www.panasonic.com", imgSrc: "/images/Bravia_8.webp", alt: "Camera 1" },
-  { id: 6, title: "Bravia Theatre Bar 8", link: "https://www.panasonic.com", imgSrc: "/images/Sounbar_8.webp", alt: "Camera 1" },
-  { id: 7, title: "LinkBuds Fit", link: "https://www.panasonic.com", imgSrc: "/images/linkBud.webp", alt: "Camera 1" },
+  { id: 1, title: "1000X SERIES", href: "/tv", imgSrc: "/images/1000x.webp", alt: "Camera 1" },
+  { id: 2, title: "INZONE M10s", href: "/tv", imgSrc: "/images/M10s.webp", alt: "Camera 1" },
+  { id: 3, title: "BRAVIA 9", href: "/tv", imgSrc: "/images/Bravia_9.webp", alt: "Camera 1" },
+  { id: 4, title: "Bravia Theatre Bar 9", href: "/tv", imgSrc: "/images/Soundbar_9.webp", alt: "Camera 1" },
+  { id: 5, title: "BRAVIA 8", href: "/tv", imgSrc: "/images/Bravia_8.webp", alt: "Camera 1" },
+  { id: 6, title: "Bravia Theatre Bar 8", href: "/tv", imgSrc: "/images/Sounbar_8.webp", alt: "Camera 1" },
+  { id: 7, title: "LinkBuds Fit", href: "/tv", imgSrc: "/images/linkBud.webp", alt: "Camera 1" },
 ];
 
 const text = "Refined Innovation. Empowering Your World with Modern Elegance".split(" ");
@@ -123,7 +123,7 @@ export default function Home() {
               className="min-w-[350px] bg-white shadow-lg rounded-xl overflow-hidden"
               whileHover={{ scale: 1.05 }}
             >
-              <Link href={product.link} target="_blank">
+              <Link href={product.href} target="_blank">
                 <img src={product.imgSrc} alt={product.alt} className="w-full h-60 object-cover" />
                 <div className="p-4 text-center font-semibold">{product.title}</div>
               </Link>
