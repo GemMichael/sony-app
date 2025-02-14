@@ -68,7 +68,21 @@ export default function Tv() {
     { title: "With BRAVIA Theatre, home becomes cinema", description: "Fill every corner of your room with soul-stirring cinematic sound. Pairing BRAVIA with BRAVIA Theatre brings the emotion and excitement of the movie theatre home, an unmatched audio-visual experience", image: "/images/bravia/Bravia_999.png" },
     { title: "Entertainment you love. With help from Google.", description: "Google TV™ brings together movies, shows, and more from across your apps and subscriptions and organises them just for you.", image: "/images/bravia/Bravia_9999.png" },
     { title: "Harmonic Presence. Blends in naturally.", description: "Everything in harmony. Our new TV designs grace your living space with shapes, materials, colours and surface treatments that blend beautifully with interior décor, walls and home theatre products.", video: "https://sony.scene7.com/is/content/sonyglobalsolutions/79_BRAVIA9_Design_12s_16x9_30fps?$originalDimensions$" },
-    { title: "Play Like Never Before™", description: "BRAVIA captures the awesome graphics and soundscapes of today's games. Want more? Pair with a PlayStation®5 console for absolute immersion.", image: "/images/bravia/ps5.png" }
+    { title: "Play Like Never Before™", description: "BRAVIA captures the awesome graphics and soundscapes of today's games. Want more? Pair with a PlayStation®5 console for absolute immersion.", image: "/images/bravia/ps5.png" },
+    { title: "Love the planet, smart for all", description: "BRAVIA is designed to harmonise with people's needs while respecting natural resources. We're accelerating our accessibility initiatives, enabling people who are blind or deaf to use Sony's devices, and expanding our environmental initiatives by incorporating recycled plastic into our products. Entertainment becomes more inclusive and enjoyable for all.", image: "/images/bravia/planet.jpg" }
+  ];
+
+  const tableData = [
+    ["Dimensions and Weight", "", ""],
+    ["Screen Size (Inch, measured diagonally", "75", "85"],
+    ["Screen Size (Cm, measured diagonally", "189", "215"],
+    ["Weight of package carton (Gross)", "56 kg", "68 kg"],
+    ["Connectivity", "", ""],
+    ["Wi-fi standard", "Wi-fi Certified 802.11a/b/g/n/ac/ax", "Wi-fi Certified 802.11a/b/g/n/ac/ax"],
+    ["Wi-fi frequency", "2.4GHz/5GHz", "2.4GHz/5GHz"],
+    ["Ethernet inputs", "1(side)", "1(side)"],
+    ["Picture", "", ""],
+    ["Picture Processor", "XR Processor", "XR Processor"],
   ];
 
   return (
@@ -76,11 +90,11 @@ export default function Tv() {
 
 
       <section className="h-screen w-full bg-black relative overflow-hidden">
-                <video ref={videoRef} autoPlay loop muted className="w-full h-full object-cover">
-                    <source src="https://sony.scene7.com/is/content/sonyglobalsolutions/Sony_FY24_TV_Category-PT-d?$originalDimensions$" type="video/mp4" />
-                </video>
-                <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
-            
+        <video ref={videoRef} autoPlay loop muted className="w-full h-full object-cover">
+          <source src="https://sony.scene7.com/is/content/sonyglobalsolutions/Sony_FY24_TV_Category-PT-d?$originalDimensions$" type="video/mp4" />
+        </video>
+        <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
+
         <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
       </section>
 
@@ -101,51 +115,91 @@ export default function Tv() {
           className="mt-6 text-lg max-w-3xl mx-auto tracking-wide">
           Come together around the screen and immerse together in the scene with true-to-life picture and surround sound made for movies.
         </motion.p>
-        <button className="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition">
+        <a
+          href="/tvlandingpage"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
+        >
           Explore the Latest Sony Bravia TV
-        </button>
+        </a>
       </section>
 
 
       <section ref={triggerRef} className="relative h-screen w-full overflow-hidden bg-black">
-  <div ref={scrollContainerRef} className="flex w-[600vw] h-full">
-    {contentData.map((content, index) => (
-      <div key={index} className="w-screen h-full flex-shrink-0 flex flex-col items-center justify-center p-10 text-center panel">
-        <h2 className="text-4xl mb-4">{content.title}</h2>
-        <p className="text-lg max-w-2xl mx-auto mb-6 text-gray-500">{content.description}</p>
-        
+        <div ref={scrollContainerRef} className="flex w-[600vw] h-full">
+          {contentData.map((content, index) => (
+            <motion.div
+              key={index}
+              className="w-screen h-full flex-shrink-0 flex flex-col items-center justify-center p-10 text-center panel"
+              initial={{ opacity: 0, y: 50 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }} 
+            >
+              <motion.h2 className="text-4xl mb-4" whileHover={{ scale: 1.1, color: "#FFD700" }} // Slight zoom & color change
+                transition={{ duration: 0.3 }}>{content.title}</motion.h2>
+              <p className="text-lg max-w-2xl mx-auto mb-6 text-gray-500">{content.description}</p>
 
-        {content.video ? (
-          <video 
-            src={content.video} 
-            autoPlay 
-            loop 
-            muted 
-            className="w-[1200px] h-[600px] rounded-xl shadow-lg mx-auto object-cover"
-          />
-        ) : (
-          <Image 
-            src={content.image} 
-            alt={content.title} 
-            width={1200} 
-            height={600} 
-            className="w-[1200px] h-[600px] rounded-xl shadow-lg mx-auto object-cover"
-          />
-        )}
-      </div>
-    ))}
-  </div>
-</section>
+              {content.video ? (
+                <motion.video
+                  src={content.video}
+                  autoPlay
+                  loop
+                  muted
+                  className="w-[1200px] h-[600px] rounded-xl shadow-lg mx-auto object-cover"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                />
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  <Image
+                    src={content.image}
+                    alt={content.title}
+                    width={1200}
+                    height={600}
+                    className="w-[1200px] h-[600px] rounded-xl shadow-lg mx-auto object-cover"
+                  />
+                </motion.div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
 
 
 
-      <section className="py-20 bg-black text-center h-screen flex items-center justify-center">
-        <div>
-          <h2 className="text-4xl font-bold">Experience More</h2>
-          <p className="text-lg mt-4 max-w-3xl mx-auto">
-            Discover more about Sony Bravia technology and elevate your home entertainment setup.
-          </p>
+      <section className="py-20 bg-black text-center flex flex-col items-center justify-center">
+        <h2 className="text-4xl font-bold mb-6">Specifications</h2>
+        <p className="text-lg mb-8 max-w-3xl">
+          Discover more about Sony Bravia technology and elevate your home entertainment setup.
+        </p>
+
+        <div className="overflow-x-auto">
+          <table className="border-collapse border border-gray-500 text-white">
+            <thead>
+              <tr>
+                <th className="border border-gray-500 px-4 py-2">2 models</th>
+                <th className="border border-gray-500 px-4 py-2">189 cm (75") K-75XR90</th>
+                <th className="border border-gray-500 px-4 py-2">215 cm (85") K-85XR90</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableData.map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {row.map((cell, colIndex) => (
+                    <td key={colIndex} className="border border-gray-500 px-4 py-2">{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
     </div>
