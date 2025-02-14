@@ -8,13 +8,13 @@ import Link from "next/link";
 
 
 const products = [
-  { id: 1, title: "1000X SERIES", href: "/tv", imgSrc: "/images/1000x.webp", alt: "Camera 1" },
+  { id: 1, title: "1000X SERIES", href: "/headphonelandingpage", imgSrc: "/images/1000x.webp", alt: "Camera 1" },
   { id: 2, title: "INZONE M10s", href: "/tv", imgSrc: "/images/M10s.webp", alt: "Camera 1" },
   { id: 3, title: "BRAVIA 9", href: "/tv", imgSrc: "/images/Bravia_9.webp", alt: "Camera 1" },
-  { id: 4, title: "Bravia Theatre Bar 9", href: "/tv", imgSrc: "/images/Soundbar_9.webp", alt: "Camera 1" },
+  { id: 4, title: "Bravia Theatre Bar 9", href: "/soundbar", imgSrc: "/images/Soundbar_9.webp", alt: "Camera 1" },
   { id: 5, title: "BRAVIA 8", href: "/tv", imgSrc: "/images/Bravia_8.webp", alt: "Camera 1" },
-  { id: 6, title: "Bravia Theatre Bar 8", href: "/tv", imgSrc: "/images/Sounbar_8.webp", alt: "Camera 1" },
-  { id: 7, title: "LinkBuds Fit", href: "/tv", imgSrc: "/images/linkBud.webp", alt: "Camera 1" },
+  { id: 6, title: "Bravia Theatre Bar 8", href: "/soundbar", imgSrc: "/images/Sounbar_8.webp", alt: "Camera 1" },
+  { id: 7, title: "LinkBuds Fit", href: "/headphonelandingpage", imgSrc: "/images/linkBud.webp", alt: "Camera 1" },
 ];
 
 const text = "Refined Innovation. Empowering Your World with Modern Elegance".split(" ");
