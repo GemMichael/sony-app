@@ -14,45 +14,53 @@
     
     "productFinder": [
         {
-            "title": "Soundbars",
-            "description": "Experience the immersive sound of our soundbars. Select from a wide range of soundbars. Immerse yourself completely in your favourite TV and movies.",
-            "image": "/images/Sounbar_8.webp"
+            "title": "Truly Wireless",
+            "description": "Explore our Truly Wireless range of earbuds for cable-free music on the go.",
+            "image": "/images/Truly.png"
+    ,        "link": "/soundbar"
         },
         {
-            "title": "Home Cinema Systems",
-            "description": "With our unique 360 Spatial Sound Mapping technology, Home Theatre System immerses you, your family and friends in a multi-dimensional expercience.",
-            "image": "/images/Soundbar_1.webp"
+            "title": "Headband",
+            "description": "Listen in comfort with our extensive range of headband headphones.",
+            "image": "/images/Headband.png"
+   ,         "link": "/soundbar"
         },
         {
-            "title": "AV Receivers",
-            "description": "Powerful, flexible audio-video components that let you connect and stream from multiple sources.",
-            "image": "/images/avReciever.png"
+            "title": "In-ear",
+            "description": "Go lighter and still immersed in your music with in-ear headphones.",
+            "image": "/images/Inear.png"
+    ,        "link": "/soundbar"
         },
         {
-            "title": "Optional Speakers",
-            "description": "Take your home entertainment even further with optional wireless subwoofers and rear speakers.",
-            "image": "/images/optionalSpeaker.png"
+            "title": "Off-ear",
+            "description": "Run, workout and enjoy your music with comfortable off-ear headphones featuring ambient sound.",
+            "image": "/images/Offear.png",
+            "link": "/soundbar"
         },
         {
-            "title": "Home Theatre Speakers",
-            "description": "Sony's audio expertise provides excellent home entertainment in this range of speakers.",
-            "image": "/images/homeTheatre.png"
+            "title": "Gaming",
+            "description": "Get yourself in the game with headsets that bring victories.",
+            "image": "/images/Gaming.png"
+   ,         "link": "/soundbar"
         },
         {
-            "title": "All-in-One Systems",
-            "description": "Complete speaker offer power and impact for a cinematic expercience.",
-            "image": "/images/allinOne.png"
+            "title": "Pro",
+            "description": "Sony's professional headphones ensure the optimum combination of aural clarity and water comfort.",
+            "image": "/images/Pro.png"
+      ,      "link": "/soundbar"
         },
         {
-            "title": "Neckband Speakers",
-            "description": "Wear your own personal speakers for movies, TV shows and music. Make a call with clear sound-perfect for online conferences.",
-            "image": "/images/neckBand.png"
+            "title": "Noise cancelling",
+            "description": "Tune out the noise and enjoy your music at its purest with industry-leading noise cancellation.",
+            "image": "/images/Noise.png"
+      ,      "link": "/soundbar"
         }
         ,
         {
-            "title": "Portable Theatre System",
-            "description": "Surround yourself in sound with this powerful speaker system that creates an immersive experience anywhere you like.",
-            "image": "/images/portableSpeaker.png"
+            "title": "Wireless",
+            "description": "Go wherever life takes you, with no cables to hold you back.",
+            "image": "/images/Wireless.png",
+            "link": "/soundbar"
         }
     ],
     
@@ -60,17 +68,20 @@
         {
             "name": "BRAVIA 9",
             "image": "/images/Bravia_9.webp",
-            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)",
+            "link": "/tv"
         },
         {
             "name": "BRAVIA 8",
             "image": "/images/Bravia_8.webp",
-            "description": "XR Processor | OLED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+            "description": "XR Processor | OLED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)",
+            "link": "/tv"
         },
         {
             "name": "BRAVIA 7",
             "image": "/images/Bravia_7.webp",
-            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)"
+            "description": "XR Processor | Mini LED | 4K Ultra HD | High Dynamic Range (HDR) | Smart TV (Google TV)",
+            "link": "/tv"
         }
     ],
     "otherproducts": [
@@ -79,21 +90,21 @@
             "name": "BRAVIA Theatre Quad",
             "image": "/images/Soundbar_1.webp",
             "description": "BRAVIA Theatre Quad | Flagship Home Theatre System | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         },
         {
             "id": 2,
             "name": "BRAVIA Theatre Bar 9",
             "image": "/images/Soundbar_9.webp",
             "description": "Flagship Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         },
         {
             "id": 3,
             "name": "BRAVIA Theatre Bar 8",
             "image": "/images/Sounbar_8.webp",
             "description": "Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         }
     ]
 }

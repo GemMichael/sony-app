@@ -208,7 +208,10 @@ export default function Soundbarlandingpage() {
                             <motion.p initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true, amount: 0.5 }} className="mt-4 text-lg text-black-300 leading-relaxed text-center">
                                 {product.description}
                             </motion.p>
-                            <a href="/products" className="mt-6 inline-block border-2 border-white text-white px-6 py-2 rounded-full transition-all duration-300 hover:bg-gray-300 hover:text-black self-center">
+                            <a
+                                href={product.link}
+                                className="mt-6 inline-block border-2 border-white text-white px-6 py-2 rounded-full transition-all duration-300 hover:bg-white hover:text-black self-center"
+                            >
                                 Learn more
                             </a>
                         </div>

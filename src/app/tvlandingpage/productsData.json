@@ -73,21 +73,21 @@
             "name": "BRAVIA Theatre Quad",
             "image": "/images/Soundbar_1.webp",
             "description": "BRAVIA Theatre Quad | Flagship Home Theatre System | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         },
         {
             "id": 2,
             "name": "BRAVIA Theatre Bar 9",
             "image": "/images/Soundbar_9.webp",
             "description": "Flagship Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         },
         {
             "id": 3,
             "name": "BRAVIA Theatre Bar 8",
             "image": "/images/Sounbar_8.webp",
             "description": "Single Soundbar | 360 Spatial Sound Mapping | Dolby Atmos®/DTS:X®",
-            "link": "/products"
+            "link": "/soundbar"
         }
     ],
     "interests": [
